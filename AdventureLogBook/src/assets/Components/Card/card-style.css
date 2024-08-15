@@ -1,0 +1,64 @@
+.monster.card{
+    border-top: 3px solid #27343B70;
+    border-left: 2px solid #27343B50;
+    border-bottom: 1px solid #27343B50;
+    border-right: 0px solid #27343B50;
+    border-radius: 3%;
+    background-color: #F8F2CD;
+    box-shadow: -20px 0 30px -15px #00000030,
+    20px 0 15px -20px #00000030;
+    padding-left: .4em;
+    padding-right: .4em;
+    padding-top: .15em;
+    padding-bottom: .15em;
+}
+
+.monster.card *{
+    font-size: .95em;
+}
+
+.card.left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    justify-items: left;
+}
+
+.heading *{
+    margin: 0px;
+}
+
+.heading .card-title{
+    font-size: 1.5em;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    color: #981E30;
+}
+
+.heading p{
+    font-style: italic;
+}
+.field-name{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #981E30;
+}
+.field-value{
+    font-family: "Poppins", sans-serif;
+    font-weight: 350;
+    color: #BA341E;
+}
+.ability-score{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1em;
+    column-gap: 1em;
+}
+.ability-score *{
+    margin: 0px;
+    text-align: center;
+}
+p, h3 {
+    text-align: left;
+}
