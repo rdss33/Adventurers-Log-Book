@@ -1,4 +1,7 @@
 .monster.card{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 1fr;
     border-top: 3px solid #27343B70;
     border-left: 2px solid #27343B50;
     border-bottom: 1px solid #27343B50;
@@ -17,13 +20,14 @@
     font-size: .95em;
 }
 
-.card.left-side{
+.side{
     display: flex;
     flex-direction: column;
     justify-content: left;
     justify-items: left;
+    margin-left: 1em;
+    margin-right: 1em;
 }
-
 .heading *{
     margin: 0px;
 }
@@ -59,6 +63,56 @@
     margin: 0px;
     text-align: center;
 }
+
+.challenge-proficiency-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 4em;
+}
+.challenge-proficiency-area *{
+    margin-top: 0px;
+}
+.detail-name{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #000000;
+    font-style: italic;
+}
+.detail-description{
+    font-family: "Poppins", sans-serif;
+    font-weight: 350;
+    color: #000000;
+}
+.action-area .action-title{
+    font-size: 1.5em;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 600;
+    color: #981E30;
+    margin-bottom: 0px;
+}
+.action-name{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #000000;
+    font-style: italic;
+}
+.action-description{
+    font-family: "Poppins", sans-serif;
+    font-weight: 350;
+    color: #000000;
+}
+.italic-style{
+    font-style: italic;
+}
 p, h3 {
     text-align: left;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #BA341E;
+    margin: .5em 0;
+    padding: 0;
 }
