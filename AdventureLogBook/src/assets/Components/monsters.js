@@ -20,7 +20,7 @@ export const Cyclop = {
       wis: 6,
       cha: 10 
     },
-    extendedInfo: {
+    extraInfo: {
       skills: [
         
       ],

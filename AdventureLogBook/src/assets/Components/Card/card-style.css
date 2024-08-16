@@ -1,19 +1,26 @@
-.monster.card{
-    display: grid;
-    grid-template-columns: 400px 400px;
-    grid-template-rows: 1fr;
-    border-top: 3px solid #27343B70;
-    border-left: 2px solid #27343B50;
-    border-bottom: 1px solid #27343B50;
-    border-right: 0px solid #27343B50;
+.card-wrapper{
+    display: flex;
+    flex-direction: row;
+    border-left: 2px solid #27343B75;
+    border-bottom: 1px solid #27343B60;
     border-radius: 3%;
-    background-color: #F8F2CD;
+    background: rgba(248,242,205,1);
+    background: linear-gradient(180deg, rgba(2,0,36,1) -30%, rgba(248,242,205,1) 5%, rgba(2,0,36,1) 1000%);
     box-shadow: -20px 0 30px -15px #00000030,
     20px 0 15px -20px #00000030;
     padding-left: .4em;
     padding-right: .4em;
     padding-top: .15em;
     padding-bottom: .15em;
+}
+
+.monster.card{
+    display: grid;
+    grid-template-columns: 400px;
+    grid-auto-columns: 400px;
+    grid-template-rows: 1fr;
+    grid-auto-flow: column;
+    padding: 0px;
 }
 
 .monster.card *{
@@ -100,6 +107,20 @@
 .action-description{
     font-family: "Poppins", sans-serif;
     font-weight: 350;
+    color: #000000;
+}
+.extend-arrow{
+    transform: scale(1.5);
+    border: 0px;
+    background: none;
+    padding: 0px;
+    place-self: center;
+    grid-column: end;
+    outline: none;
+    color: #981E30;
+}
+.extend-arrow:focus{
+    outline: none;
     color: #000000;
 }
 .italic-style{

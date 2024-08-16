@@ -1,11 +1,11 @@
 
 import './App.css'
-import MonsterCard from './assets/Components/Card/MonsterCard'
+import CreatureCard from './assets/Components/Card/CreatureCard'
 import {Cyclop} from './assets/Components/monsters'
 
 function App() {
   return (
-      <MonsterCard 
+      <CreatureCard 
         monsterObj = {Cyclop}
       />
   )

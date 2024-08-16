@@ -4,7 +4,7 @@ import SensesField from "./Senses Area/SensesField";
 import LanguagesField from "./Language Area/LanguagesField";
 
 
-export default function CardExtendedInfo(props){
+export default function CardExtraInfo(props){
    
     const extendedInfo = props.extendedInfo;
     return(
@@ -20,6 +20,6 @@ export default function CardExtendedInfo(props){
     );
 }
 
-CardExtendedInfo.propTypes = {
+CardExtraInfo.propTypes = {
     extendedInfo: PropTypes.object
 }
